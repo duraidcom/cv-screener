@@ -33,7 +33,7 @@ export class PDFProcessor {
     }
   }
 
-  chunkText(text: string, maxChunkSize: number = 1000, overlap: number = 200): ProcessedChunk[] {
+  chunkText(text: string, maxChunkSize: number = 4000, overlap: number = 200): ProcessedChunk[] {
     const sentences = text.split(/[.!?]+/).filter(s => s.trim().length > 0)
     const chunks: ProcessedChunk[] = []
     let currentChunk = ''

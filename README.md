@@ -231,7 +231,7 @@ cv-screener/
 ### Vector Search Parameters
 - **Similarity Threshold**: 0.7 with fallback to direct query (adjustable in RAG service)
 - **Max Results**: 8 chunks per query
-- **Chunk Size**: ~1000 characters with 200 character overlap
+- **Chunk Size**: 4000 characters with 200 character overlap
 - **Fallback Mechanism**: Automatic fallback to direct database query if vector function fails
 
 ### UI Customization
